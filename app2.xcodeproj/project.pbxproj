@@ -13,6 +13,8 @@
 		CE5841752ABC9712009C1C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5841732ABC9712009C1C95 /* Main.storyboard */; };
 		CE5841772ABC9715009C1C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5841762ABC9715009C1C95 /* Assets.xcassets */; };
 		CE58417A2ABC9715009C1C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5841782ABC9715009C1C95 /* LaunchScreen.storyboard */; };
+		CE5841852ABC979E009C1C95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5841842ABC979E009C1C95 /* LoginViewController.swift */; };
+		CE5841872ABC97BD009C1C95 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5841862ABC97BD009C1C95 /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE5841762ABC9715009C1C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5841792ABC9715009C1C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE58417B2ABC9715009C1C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5841842ABC979E009C1C95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE5841862ABC97BD009C1C95 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		CE58416C2ABC9711009C1C95 /* app2 */ = {
 			isa = PBXGroup;
 			children = (
-				CE58416D2ABC9711009C1C95 /* AppDelegate.swift */,
-				CE58416F2ABC9711009C1C95 /* SceneDelegate.swift */,
-				CE5841712ABC9711009C1C95 /* ViewController.swift */,
-				CE5841732ABC9712009C1C95 /* Main.storyboard */,
-				CE5841762ABC9715009C1C95 /* Assets.xcassets */,
-				CE5841782ABC9715009C1C95 /* LaunchScreen.storyboard */,
-				CE58417B2ABC9715009C1C95 /* Info.plist */,
+				CE5841812ABC971F009C1C95 /* Resources */,
+				CE5841882ABC9FB9009C1C95 /* gg */,
+				CE5841832ABC977A009C1C95 /* Login */,
+				CE5841822ABC9762009C1C95 /* Main */,
 			);
 			path = app2;
+			sourceTree = "<group>";
+		};
+		CE5841812ABC971F009C1C95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE58417B2ABC9715009C1C95 /* Info.plist */,
+				CE5841782ABC9715009C1C95 /* LaunchScreen.storyboard */,
+				CE5841762ABC9715009C1C95 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE5841822ABC9762009C1C95 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE5841712ABC9711009C1C95 /* ViewController.swift */,
+				CE5841732ABC9712009C1C95 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE5841832ABC977A009C1C95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE5841842ABC979E009C1C95 /* LoginViewController.swift */,
+				CE5841862ABC97BD009C1C95 /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CE5841882ABC9FB9009C1C95 /* gg */ = {
+			isa = PBXGroup;
+			children = (
+				CE58416F2ABC9711009C1C95 /* SceneDelegate.swift */,
+				CE58416D2ABC9711009C1C95 /* AppDelegate.swift */,
+			);
+			path = gg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE58417A2ABC9715009C1C95 /* LaunchScreen.storyboard in Resources */,
+				CE5841872ABC97BD009C1C95 /* LoginViewController.storyboard in Resources */,
 				CE5841772ABC9715009C1C95 /* Assets.xcassets in Resources */,
 				CE5841752ABC9712009C1C95 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5841852ABC979E009C1C95 /* LoginViewController.swift in Sources */,
 				CE5841722ABC9711009C1C95 /* ViewController.swift in Sources */,
 				CE58416E2ABC9711009C1C95 /* AppDelegate.swift in Sources */,
 				CE5841702ABC9711009C1C95 /* SceneDelegate.swift in Sources */,
@@ -288,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = app2/Info.plist;
+				INFOPLIST_FILE = app2/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = app2/Info.plist;
+				INFOPLIST_FILE = app2/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
